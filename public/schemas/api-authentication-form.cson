@@ -1,0 +1,9 @@
+[
+  {
+    key: "uuid"
+  }
+  {
+    key: "token"
+    type: "password"
+  }
+]

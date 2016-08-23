@@ -1,0 +1,19 @@
+{
+  type: 'object'
+  title: 'Update Device'
+  'x-group-name': 'Update'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      required: ['uuid']
+      properties:
+        uuid:
+          type: 'string'
+          title: 'UUID'
+          description: 'Meshblu Device UUID'
+        updateJSON:
+          type: 'string'
+          title: 'Update Object as JSON String'
+          description: 'Update to perform in Meshblu as a JSON string, this is a destructive update so remember to use $set'
+}

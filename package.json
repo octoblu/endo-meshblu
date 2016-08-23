@@ -2,8 +2,7 @@
   "name": "endo-meshblu",
   "version": "1.0.0",
   "description": "Put some description here",
-  "keywords": [
-  ],
+  "keywords": [],
   "homepage": "https://github.com/octoblu/meshblu",
   "bugs": "https://github.com/octoblu/meshblu/issues",
   "author": {
@@ -52,8 +51,7 @@
     "passport": "^0.3.2",
     "passport-octoblu": "^2.0.1"
   },
-  "peerDependencies": {
-  },
+  "peerDependencies": {},
   "engines": {
     "node": ">=0.8.0",
     "npm": ">=1.2.10"

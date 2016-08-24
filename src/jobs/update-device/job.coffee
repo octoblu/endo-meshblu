@@ -12,7 +12,8 @@ class UpdateDevice
     return callback @_userError(422, 'data.updateJSON is required') unless data.updateJSON?
     options = {}
     { uuid, updateJSON } = data
-    update = JSON.parse updateJSON
+    update = updateJSON
+    update = JSON.parse(updateJSON) if _.isString updateJSON
 
     @meshbluHttp.updateDangerously uuid, update, (error, result) =>
       return callback error if error?

@@ -1,10 +1,13 @@
 # endo-meshblu
 
+[![Build Status](https://travis-ci.org/octoblu/endo-meshblu.svg?branch=master)](https://travis-ci.org/octoblu/endo-meshblu)
+[![Test Coverage](https://codecov.io/gh/octoblu/endo-meshblu/branch/master/graph/badge.svg)](https://codecov.io/gh/octoblu/endo-meshblu)
 [![Dependency status](http://img.shields.io/david/octoblu/endo-meshblu.svg?style=flat)](https://david-dm.org/octoblu/endo-meshblu)
 [![devDependency Status](http://img.shields.io/david/dev/octoblu/endo-meshblu.svg?style=flat)](https://david-dm.org/octoblu/endo-meshblu#info=devDependencies)
-[![Build Status](http://img.shields.io/travis/octoblu/endo-meshblu.svg?style=flat&branch=master)](https://travis-ci.org/octoblu/endo-meshblu)
+[![Slack Status](http://community-slack.octoblu.com/badge.svg)](http://community-slack.octoblu.com)
 
 [![NPM](https://nodei.co/npm/endo-meshblu.svg?style=flat)](https://npmjs.org/package/endo-meshblu)
+
 
 ## Installing
 

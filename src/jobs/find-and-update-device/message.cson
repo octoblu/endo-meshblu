@@ -1,6 +1,6 @@
 {
   type: 'object'
-  title: 'Update Device'
+  title: 'Find And Update Device'
   'x-group-name': 'Device'
   required: ['data']
   properties:

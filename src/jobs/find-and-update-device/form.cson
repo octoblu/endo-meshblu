@@ -1,0 +1,6 @@
+{
+  angular: [
+    { key: 'data.uuid' }
+    { key: 'data.updateJSON' }
+  ]
+}

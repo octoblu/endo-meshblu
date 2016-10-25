@@ -1,0 +1,7 @@
+{
+  type: 'object'
+  required: ['metadata', 'data']
+  properties:
+    data:
+      type: 'object'
+}

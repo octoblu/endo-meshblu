@@ -1,0 +1,15 @@
+{
+  type: 'object'
+  title: 'Get Subscriptions'
+  'x-group-name': 'Subscriptions'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      required: ['uuid']
+      properties:
+        uuid:
+          type: 'string'
+          title: 'UUID'
+          description: 'Meshblu Device UUID'
+}

@@ -52,8 +52,8 @@ class MeshbluStrategy extends PassportStrategy
     @_formSchemaUrl
 
   getUserRecordFromMeshblu: ({uuid, token}, callback) =>
-    meshbluConfig = new MeshbluConfig.toJSON()
-    config = _.defaults {uuid, token}, meshbluConfig
+    meshbluConfig = new MeshbluConfig
+    config = _.defaults {uuid, token}, meshbluConfig.toJSON()
     meshbluHttp = new MeshbluHttp config
     meshbluHttp.whoami (error, device) =>
       return callback error if error?

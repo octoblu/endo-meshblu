@@ -8,8 +8,8 @@ class FindAndUpdateDevice
     @auth = @encrypted.secrets.credentials
     throw new Error 'Job requires auth.uuid' if _.isEmpty @auth?.uuid
     throw new Error 'Job requires auth.token' if _.isEmpty @auth?.token
-    meshbluConfig = new MeshbluConfig.toJSON()
-    config = _.defaults @auth, meshbluConfig
+    meshbluConfig = new MeshbluConfig
+    config = _.defaults @auth, meshbluConfig.toJSON()
     @meshbluHttp = new MeshbluHttp config
 
   do: ({data}, callback) =>

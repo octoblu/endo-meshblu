@@ -1,11 +1,16 @@
-MeshbluHttp = require 'meshblu-http'
-http   = require 'http'
-_      = require 'lodash'
+MeshbluHttp   = require 'meshblu-http'
+MeshbluConfig = require 'meshblu-config'
+http          = require 'http'
+_             = require 'lodash'
 
 class FindAndUpdateDevice
   constructor: ({@encrypted}) ->
     @auth = @encrypted.secrets.credentials
-    @meshbluHttp = new MeshbluHttp @auth
+    throw new Error 'Job requires auth.uuid' if _.isEmpty @auth?.uuid
+    throw new Error 'Job requires auth.token' if _.isEmpty @auth?.token
+    meshbluConfig = new MeshbluConfig.toJSON()
+    config = _.defaults @auth, meshbluConfig
+    @meshbluHttp = new MeshbluHttp config
 
   do: ({data}, callback) =>
     return callback @_userError(422, 'data.uuid is required') unless data.uuid?

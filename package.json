@@ -1,6 +1,6 @@
 {
   "name": "endo-meshblu",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "description": "Put some description here",
   "keywords": [],
   "homepage": "https://github.com/octoblu/meshblu",
@@ -49,7 +49,7 @@
     "fs-cson": "^0.3.2",
     "jsonschema": "^1.1.0",
     "lodash": "^4.11.1",
-    "meshblu-config": "^4.0.0",
+    "meshblu-config": "^4.1.3",
     "meshblu-encryption": "^1.0.3",
     "morgan": "^1.6.1",
     "passport": "^0.3.2",

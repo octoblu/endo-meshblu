@@ -3,6 +3,7 @@ PassportStrategy = require 'passport-strategy'
 request          = require 'request'
 url              = require 'url'
 MeshbluHttp      = require 'meshblu-http'
+MeshbuConfig     = require 'meshblu-config'
 
 class MeshbluStrategy extends PassportStrategy
   constructor: (env) ->
@@ -28,7 +29,6 @@ class MeshbluStrategy extends PassportStrategy
     @getUserRecordFromMeshblu {uuid, token}, (error, user) =>
       return @fail 401 if error? && error.code < 500
       return @error error if error?
-      return @fail 404 unless user?
       @success {
         id:       user.uuid
         username: user.name ? user.uuid
@@ -52,7 +52,9 @@ class MeshbluStrategy extends PassportStrategy
     @_formSchemaUrl
 
   getUserRecordFromMeshblu: ({uuid, token}, callback) =>
-    meshbluHttp = new MeshbluHttp {uuid, token}
+    meshbluConfig = new MeshbluConfig.toJSON()
+    config = _.defaults {uuid, token}, meshbluConfig
+    meshbluHttp = new MeshbluHttp config
     meshbluHttp.whoami (error, device) =>
       return callback error if error?
       data =

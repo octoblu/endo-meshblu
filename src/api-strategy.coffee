@@ -3,7 +3,7 @@ PassportStrategy = require 'passport-strategy'
 request          = require 'request'
 url              = require 'url'
 MeshbluHttp      = require 'meshblu-http'
-MeshbuConfig     = require 'meshblu-config'
+MeshbluConfig    = require 'meshblu-config'
 
 class MeshbluStrategy extends PassportStrategy
   constructor: (env) ->

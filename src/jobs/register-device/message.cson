@@ -1,0 +1,15 @@
+{
+  type: 'object'
+  title: 'Register Device'
+  'x-group-name': 'Device'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      required: ['uuid']
+      properties:
+        options:
+          type: 'string'
+          title: 'Device Options'
+          description: 'Provide a JSON object to set properties on the new device'
+}

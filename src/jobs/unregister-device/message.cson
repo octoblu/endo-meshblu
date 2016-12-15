@@ -1,0 +1,15 @@
+{
+  type: 'object'
+  title: 'Unregister Device'
+  'x-group-name': 'Device'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      required: ['uuid']
+      properties:
+        uuid:
+          type: 'string'
+          title: 'UUID'
+          description: 'Provide the UUID of the device to delete'
+}

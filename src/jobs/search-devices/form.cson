@@ -1,0 +1,7 @@
+{
+  angular: [
+    { key: 'data.query' }
+    { key: 'data.projection' }
+    { key: 'data.as' }
+  ]
+}

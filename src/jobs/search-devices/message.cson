@@ -1,0 +1,23 @@
+{
+  type: 'object'
+  title: 'Get Subscriptions'
+  'x-group-name': 'Subscriptions'
+  required: ['data']
+  properties:
+    data:
+      type: 'object'
+      required: ['query']
+      properties:
+        query:
+          type: 'string'
+          title: 'Query'
+          description: 'Meshblu query'
+        projection:
+          type: 'string'
+          title: 'Projection'
+          description: 'Return only these fields, uses mongodb-style projections'
+        as:
+          type: 'string'
+          title: 'As'
+          description: 'Perform meshblu search as this device'
+}

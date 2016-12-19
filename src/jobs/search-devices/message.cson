@@ -1,7 +1,7 @@
 {
   type: 'object'
-  title: 'Get Subscriptions'
-  'x-group-name': 'Subscriptions'
+  title: 'Search Devices'
+  'x-group-name': 'Device'
   required: ['data']
   properties:
     data:

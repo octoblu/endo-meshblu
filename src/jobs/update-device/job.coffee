@@ -26,6 +26,7 @@ class UpdateDevice
         metadata:
           code: 204
           status: http.STATUS_CODES[204]
+          performedBy: @auth.uuid
         data: result
       }
 

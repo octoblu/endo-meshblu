@@ -22,6 +22,7 @@ class GetSubscriptions
         metadata:
           code: 200
           status: http.STATUS_CODES[200]
+          performedBy: @auth.uuid
         data: result
       }
 

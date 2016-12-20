@@ -29,6 +29,7 @@ class SearchDevices
           code: 200
           status: http.STATUS_CODES[200]
           performedBy: as ? @auth.uuid
+          query: query
         data: result
       }
 

@@ -1,6 +1,6 @@
 {
   "name": "endo-meshblu",
-  "version": "1.9.1",
+  "version": "1.9.2",
   "description": "Put some description here",
   "keywords": [],
   "homepage": "https://github.com/octoblu/meshblu",
@@ -45,7 +45,7 @@
     "express": "^4.13.3",
     "express-meshblu-auth": "^5.0.0",
     "express-meshblu-healthcheck": "^1.0.1",
-    "express-send-error": "^1.1.0",
+    "express-send-error": "^1.2.0",
     "fs-cson": "^0.3.2",
     "jsonschema": "^1.1.0",
     "lodash": "^4.11.1",
